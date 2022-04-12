@@ -1,46 +1,50 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Com o passar do tempo, adquirimos novas responsabilidades e com isso o tempo livre que nos restava para organizar a diversão do fim de semana ou até mesmo o jogo sem compromisso no meio da semana ficou mais escasso. Considerando principalmente o período pós-pandemia, onde o isolamento social acabou extinguindo quase que completamente estes eventos de futebol amador, nos vemos em um momento de retorno à esse tipo de atividade, agora que grande parte da população já está no processo de vacinação.
+
+Entretanto, nem sempre é simples para os amantes de futebol conseguirem organizar um evento como este com um número suficiente de pessoas para que a bola possa rolar. É claro que existem muitas pessoas por aí dispostas a jogar a qualquer instante, porém, muitas das vezes essas pessoas acabam enfrentando muitos problemas para adequar seus horários aos horários dos outros, ou até mesmo aos horários disponíveis em uma quadra que seja acessível. Além disso, podemos considerar o fato de que existem muitas pessoas que possivelmente moram a poucos quilômetros de você, ou até mesmo na sua rua, e o fato de vocês não se conhecerem ou não terem um certo nível de proximidade, torna impossível que estejam presentes em um mesmo evento de futebol, ou que vocês possam até mesmo se ajudar preenchendo uma vaga.
+
+Portanto, a partir desses diversos problemas que estas pessoas enfrentam quando o assunto é jogos de futebol de bairro, faz-se necessário que hajam meios que interliguem os amadores em uma rede que possa aproximar pessoas desconhecidas que possuem os mesmos problemas e motivações, para que dessa forma possam compartilhar experiências, criar novos laços e aprender novas coisas.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Conforme previamente estabelecido, o problema que este projeto se propõe a resolver é a organização de jogos de futebol amador, seja para aqueles que participam ativamente dos jogos ou proprietários de espaços para locação que recebem jogos de futebol.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo principal do projeto é a criação de um portal que será acessível por qualquer dispositivo com acesso à Internet, apresentando ferramentas para cadastro de perfis de jogadores e espaços que receberão os jogos.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Como objetivos específicos, podemos listar:
+
+- Fornecer funcionalidades que permitam o cadastro tanto dos jogadores quanto dos espaços para locação;
+- Criação de uma lista de jogadores e espaços preferidos;
+- Filtro de pesquisa de jogadores e espaços por suas características previamente cadastradas.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Por meio de bate-papos com pessoas que vivem a realidade dos jogos de futebol amador, fica evidente que um sistema de organização dessa modalidade facilitaria e resolveria grande parte dos problemas de quem quer jogar, seja para se exercitar, se divertir ou apenas descontrair.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Realizamos uma pesquisa com uma amostra de 102 pessoas, que possivelmente seriam jogadoras de nível amador, onde o objetivo principal foi definir se para organizar um jogo amador havia de fato uma dificuldade em encontrar o número total de jogadores.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+![](img/pesquisa_1.png)
+
+Identificamos que a maioria das pessoas que responderam a pesquisa organizam seus jogos através do WhatsApp, Telegram ou Facebook e de forma manual.
+
+![](img/pesquisa_2.png)
+
+Também é possível identificar que os maiores problemas encontrados para realizar uma partida é a formação de um grupo de jogadores devido ao número insuficiente de jogadores para compor um time, desistência ou a falta de um ou mais jogadores sem aviso prévio, totalizando 86,2% dos entrevistados (86 pessoas).
+
+![](img/pesquisa_3.png)
+
+Destas 86 pessoas que encontraram dificuldades para formar um time, foi direcionada uma pergunta para verificar se estes utilizariam um sistema para gerenciamento e garantia de que a partida acontecerá. Identificamos com esta pergunta que 77,2% das pessoas com este tipo de dificuldade (66 pessoas) utilizariam algum tipo de sistema.
+
+![](img/pesquisa_4.png)
+
+Por fim, procuramos entender que tipo de sistema estas pessoas buscam para resolver a sua dor de não conseguir formar um grupo de jogadores para realizar a partida. Obtivemos respostas que identificaram um sistema online acessível pelo navegador ou um aplicativo de celular. Com isso, podemos observar a importância de um sistema responsivo, mesmo que desenvolvido apenas para a web.
+
+![](img/pesquisa_5.png)
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Levando em consideração o fato de que a prática de esportes deve ser um hábito constante para a manutenção da saúde de todos, o foco deste trabalho está no público praticante de exercícios físicos, mais especificamente aqueles que jogam futebol amador, também conhecido como “pelada”. Através do acesso à aplicação, é possível encontrar pessoas que possuem a mesma disponibilidade de dia e horário para a prática do esporte e a melhor quadra de acesso, alinhada com a região de cada um.
+Sendo assim, o público-alvo do projeto são Homens e Mulheres, entre 18 e 45 anos, residentes de Belo Horizonte e região, praticantes de exercícios físicos, que jogam ou têm interesse em jogar futebol amador e que possuem dificuldades em encontrar jogadores(as) para a realização dos jogos, ou até mesmo uma quadra com disponibilidade e que se encaixe no horário de todos.

@@ -26,23 +26,23 @@ Por meio de bate-papos com pessoas que vivem a realidade dos jogos de futebol am
 
 Realizamos uma pesquisa com uma amostra de 102 pessoas, que possivelmente seriam jogadoras de nível amador, onde o objetivo principal foi definir se para organizar um jogo amador havia de fato uma dificuldade em encontrar o número total de jogadores.
 
-![](img/pesquisa_1.png)
+![](img/pesquisa/pergunta_1.png)
 
 Identificamos que a maioria das pessoas que responderam a pesquisa organizam seus jogos através do WhatsApp, Telegram ou Facebook e de forma manual.
 
-![](img/pesquisa_2.png)
+![](img/pesquisa/pergunta_2.png)
 
 Também é possível identificar que os maiores problemas encontrados para realizar uma partida é a formação de um grupo de jogadores devido ao número insuficiente de jogadores para compor um time, desistência ou a falta de um ou mais jogadores sem aviso prévio, totalizando 86,2% dos entrevistados (86 pessoas).
 
-![](img/pesquisa_3.png)
+![](img/pesquisa/pergunta_3.png)
 
 Destas 86 pessoas que encontraram dificuldades para formar um time, foi direcionada uma pergunta para verificar se estes utilizariam um sistema para gerenciamento e garantia de que a partida acontecerá. Identificamos com esta pergunta que 77,2% das pessoas com este tipo de dificuldade (66 pessoas) utilizariam algum tipo de sistema.
 
-![](img/pesquisa_4.png)
+![](img/pesquisa/pergunta_4.png)
 
 Por fim, procuramos entender que tipo de sistema estas pessoas buscam para resolver a sua dor de não conseguir formar um grupo de jogadores para realizar a partida. Obtivemos respostas que identificaram um sistema online acessível pelo navegador ou um aplicativo de celular. Com isso, podemos observar a importância de um sistema responsivo, mesmo que desenvolvido apenas para a web.
 
-![](img/pesquisa_5.png)
+![](img/pesquisa/pergunta_5.png)
 
 ## Público-Alvo
 

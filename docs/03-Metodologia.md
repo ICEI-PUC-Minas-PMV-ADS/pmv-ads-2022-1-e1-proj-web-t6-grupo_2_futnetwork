@@ -1,9 +1,6 @@
-
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+Utilizaremos o Kanban pela ferramenta Trello, o quadro pode ser [acessado por este link](https://trello.com/invite/b/wXW23s3F/d3b31807c1695a722b31a0d2ba102c45/futnetwork). Alinhado ao Kanban, faremos reuniões para discutir backlog, refinamento de tarefas, priorização, dailys, alinhamentos semanais, como um SCRUM desestruturado para atender às necessidades atuais do grupo, podendo evoluir para a metodologia completa posteriormente.
 
 ## Controle de Versão
 
@@ -13,10 +10,11 @@ foi utilizado para hospedagem do repositório.
 
 O projeto segue a seguinte convenção para o nome de branches:
 
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+- `master`: versão em produção do software
+- `develop`: versão de testes do software
+- `feature/nome-do-branch`: versão de desenvolvimento de uma funcionalidade
+- `release/nome-do-branch`: versão que reúne diversas funcionalidades para deploy
+- `hotfix/nome-do-branch`: versão de correção urgente
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
@@ -26,52 +24,95 @@ etiquetas:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+![](img/gitflow.png)
 
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+Centralizaremos na branco `master` todo o código produtivo que já foi desenvolvido, testado e aprovado. Na branch `develop`, centralizaremos todo o código desenvolvido que necessita de testes e aprovações da equipe. Nas branches de prefixo `feature/*`, serão enviados os códigos de desenvolvimento da funcionalidade especifica nomeada ao branch e, por fim, nas branches de prefixo `release/*`, centralizaremos as funcionalidades competentes àquela versão de lançamento. Os branches de prefixo `hotfix/*` serão os responsáveis por correções extraordinárias e urgentes no sistema.
 
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+Nesta sessão, serão definidos os papéis que o projeto exige que o grupo exerça sendo eles:
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+- Desenvolvimento:
+
+Atividades de escrita de código a partir de uma tarefa.
+
+- Gerenciamento de tarefas
+
+_Backlog_:
+
+Definição de tudo que a etapa atual do projeto necessita para ser entregue
+
+_Priorização_:
+
+Definição do que é mais importante ser entregue primeiro
+
+_Refinamento_:
+
+Definição do que deve ser desenvolvido
+
+- Code Review
+
+Revisão do código entregue por outros desenvolvedores para garantir a integridade do sistema
+
+- Testes
+
+Testes da aplicação para checar se o comportamento esperado foi entregue
+
+### Equipe
+
+#### Alyson Pereira
+
+- Desenvolvimento
+- Gerenciamento de tarefas
+  - Backlog
+
+#### Eduardo Vinícius
+
+- Desenvolvimento
+- Code Review
+- Testes
+
+#### Hendrie Wagner
+
+- Desenvolvimento
+- Gerenciamento de tarefas
+  - Priorização
+
+#### Henrique Balmant
+
+- Gerenciamento de tarefas
+  - Backlog
+  - Priorização
+  - Refinamento
+- Code Review
+- Testes
+
+#### Pedro Lino
+
+- Desenvolvimento
+- Gerenciamento de tarefas
+  - Refinamento
+- Testes
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+A metodologia SCRUM será desestruturada e alinhada com o [Kanban no Trello](https://trello.com/invite/b/wXW23s3F/d3b31807c1695a722b31a0d2ba102c45/futnetwork).
+Começaremos a semana na segunda-feira às 19h com uma reunião de 1h15min para definição do backlog da semana, refinamento e priorização das tarefas. Nossa sprint começa aqui, com duração até a próxima sexta-feira.
+Será feita uma reunião semanal toda segunda-feira às 20h15 com a orientadora do projeto para ciência das dificuldades e progresso no desenvolvimento.
+De terça-feira à sexta-feira, faremos uma daily com duração de 15min às 20h para checkpoints com os donos das tarefas.
+Teremos a possibilidade de reuniões extraordinárias de até 1h para resolução de problemas e discussões de ideias para implementação no projeto.
 
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Editor de código padronizado: [VSCode](https://code.visualstudio.com/);
+- Comunicação: Grupo de WhatsApp;
+- Gerenciamento de tarefas: [Trello](https://trello.com/invite/b/wXW23s3F/d3b31807c1695a722b31a0d2ba102c45/futnetwork);
+- Versionamento de código: [Github](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_2_futnetwork);
+- Desenhos de tela (_wireframing_): [Whimsical](https://whimsical.com/futnetwork-CxPCbG5Va8Q9fyGJQiykSX);
+- Desenhos de fluxos: [Whimsical](https://whimsical.com/futnetwork-CxPCbG5Va8Q9fyGJQiykSX);
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+O VSCode possui integração com o nossa ferramenta de versionamento de código, além de extensões que permitem simular um servidor local para exibir o conteúdo do projeto em tela, sem precisar de realizar deploys. A comunicação começou via um grupo do WhatsApp e decidimos manter por conta do histórico e por ser acessível para todos os integrantes. O Trello será utilizado para manter a organização do que deve ser feito e priorizado como ferramenta de Kanban. O Github é o repositório de código e interpretador de Git para versionamento deste. As telas e fluxos serão desenhadas no Whimsical por conhecimento prévio de um dos integrantes.

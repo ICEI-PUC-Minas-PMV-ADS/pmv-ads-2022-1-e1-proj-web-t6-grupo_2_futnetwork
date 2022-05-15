@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Cadastro - Futnetwork</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="./js/profileTypeHandler.js"
+    ></script>
+    <script
+      src="./js/createAccount.js"
+    ></script>
+  </head>
+  <body class="bg-dark">
+    <div id="layoutAuthentication">
+      <div id="layoutAuthentication_content">
+        <main>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-7">
+                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                  <div class="card-header">
+                    <h3 class="text-center font-weight-light my-4">
+                      Cadastre sua conta
+                    </h3>
+                  </div>
+                  <div class="card-body">
+                    <form id="accountForm" method="post" action="./login.html">
+                      <div class="row mb-3">
+                        <div class="col-md-12">
+                          <div class="form-floating mb-3 mb-md-0">
+                            <input
+                              class="form-control"
+                              id="inputFullName"
+                              name="inputFullName"
+                              type="text"
+                              placeholder="Digite o seu nome completo"
+                            />
+                            <label for="inputFullName">Nome completo</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          id="inputEmail"
+                          name="inputEmail"
+                          type="email"
+                          placeholder="nome@exemplo.com"
+                        />
+                        <label for="inputEmail">Endereço de e-mail</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          id="inputPhone"
+                          name="inputPhone"
+                          type="tel"
+                          placeholder="Informe o seu celular"
+                        />
+                        <label for="inputPhone">Celular</label>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-md-6">
+                          <div class="form-floating mb-3 mb-md-0">
+                            <input
+                              class="form-control"
+                              id="inputPassword"
+                              name="inputPassword"
+                              type="password"
+                              placeholder="Crie uma senha"
+                            />
+                            <label for="inputPassword">Senha</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-floating mb-3 mb-md-0">
+                            <input
+                              class="form-control"
+                              id="inputPasswordConfirm"
+                              name="inputPasswordConfirm"
+                              type="password"
+                              placeholder="Confirme sua senha"
+                            />
+                            <label for="inputPasswordConfirm"
+                              >Confirme a senha</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <h3 class="text-center font-weight-light my-4">
+                        Preencha as informações do perfil
+                      </h3>
+                      <div class="row mb-3">
+                        <div class="col-md-3">
+                          <div class="form-floating mb-3 mb-md-0">
+                            <select class="form-control" id="selectProfileType" onchange="profileTypeHandler()">
+                              <option value="player" default>Jogador</option>
+                              <option value="manager">Gerente de Quadra</option>
+                            </select>
+                            <label for="selectProfileType"
+                              >Tipo de Perfil</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div id="playerForm">
+                        <div class="form-floating mb-3">
+                          <div
+                            class="pill-container form-control selectPlayerPositions"
+                          >
+                            <input type="checkbox" id="pivo" name="pivo" value="pivo" />
+                            <label for="pivo" class="pill-container-input"
+                              >Pivô</label
+                            >
+
+                            <input
+                              type="checkbox"
+                              id="ala-esquerda"
+                              name="ala-esquerda"
+                              value="ala-esquerda"
+                            />
+                            <label
+                              for="ala-esquerda"
+                              class="pill-container-input"
+                              >Ala Esquerda</label
+                            >
+
+                            <input
+                              type="checkbox"
+                              id="ala-direita"
+                              name="ala-direita"
+                              value="ala-direita"
+                            />
+                            <label
+                              for="ala-direita"
+                              class="pill-container-input"
+                              >Ala Direita</label
+                            >
+
+                            <input type="checkbox" id="fixo" name="fixo" value="fixo" />
+                            <label for="fixo" class="pill-container-input"
+                              >Fixo</label
+                            >
+
+                            <input
+                              type="checkbox"
+                              id="goleiro" name="goleiro"
+                              value="goleiro"
+                            />
+                            <label for="goleiro" class="pill-container-input"
+                              >Goleiro</label
+                            >
+                          </div>
+                          <label for="selectPlayerPositions">Posições</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <div class="pill-container form-control selectWeekDays" style="height: 85px">
+                            <input
+                              type="checkbox"
+                              id="segunda"
+                              name="segunda"
+                              value="segunda"
+                            />
+                            <label for="segunda" class="pill-container-input"
+                              >Segunda-feira</label
+                            >
+
+                            <input type="checkbox" id="terca" name="terca" value="terca" />
+                            <label for="terca" class="pill-container-input"
+                              >Terça-feira</label
+                            >
+
+                            <input type="checkbox" id="quarta" name="quarta" value="quarta" />
+                            <label for="quarta" class="pill-container-input"
+                              >Quarta-feira</label
+                            >
+
+                            <input type="checkbox" id="quinta" name="quinta" value="quinta" />
+                            <label for="quinta" class="pill-container-input"
+                              >Quinta-feira</label
+                            >
+                        </br>
+                            <input type="checkbox" id="sexta" name="sexta" value="sexta" />
+                            <label for="sexta" class="pill-container-input"
+                              >Sexta-feira</label
+                            >
+
+                            <input type="checkbox" id="sabado" name="sabado" value="sabado" />
+                            <label for="sabado" class="pill-container-input"
+                              >Sábado</label
+                            >
+
+                            <input
+                              type="checkbox"
+                              id="domingo"
+                              name="domingo"
+                              value="domingo"
+                            />
+                            <label for="domingo" class="pill-container-input"
+                              >Domingo</label
+                            >
+                          </div>
+                          <label for="selectWeekDays">Dias da Semana</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input
+                            class="form-control"
+                            id="inputHours"
+                            name="inputHours"
+                            type="text"
+                            placeholder="19h às 20h"
+                          />
+                          <label for="inputHours">Horários</label>
+                        </div>
+                      </div>
+                      <div id="managerForm" hidden>
+                        <div class="card bg-warning text-white mb-4">
+                          <div class="card-body">Informações</div>
+                          <div class="card-footer d-flex align-items-center justify-content-between">
+                            Esta funcionalidade estará disponível em seu perfil assim que concluir o cadastro.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-4 mb-0">
+                        <div class="d-grid">
+                          <button class="btn btn-primary btn-block" type="submit" onclick="createAccount()">
+                            Criar sua conta
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="card-footer text-center py-3">
+                    <div class="small">
+                      <a href="login.html">Possui uma conta? Faça login</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
